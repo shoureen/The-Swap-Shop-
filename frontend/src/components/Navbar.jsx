@@ -1,15 +1,26 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        The Swap Shop
+        <Link to="/">The Swap Shop</Link>
       </div>
 
       <div className="navbar-links">
-        <a href="/">Home</a>
-        <a href="/marketplace">Marketplace</a>
-        <a href="/login">Login</a>
-        <a href="/register">Sign Up</a>
+        <Link to="/">Home</Link>
+
+        <Link to="/marketplace">
+          Marketplace
+        </Link>
+
+        <Link to="/login">
+          Login
+        </Link>
+
+        <Link to="/register">
+          Sign Up
+        </Link>
       </div>
     </nav>
   );

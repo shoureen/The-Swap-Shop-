@@ -102,3 +102,123 @@
 .step p {
   line-height: 1.6;
 }
+/* Marketplace */
+
+.marketplace {
+  min-height: 100vh;
+  padding: 60px;
+  background-color: #f8f6f1;
+}
+
+.marketplace-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.marketplace-header h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.marketplace-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.marketplace-controls {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  display: flex;
+  gap: 15px;
+}
+
+.marketplace-controls input,
+.marketplace-controls select {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 15px;
+}
+
+.marketplace-controls input {
+  flex: 1;
+}
+
+.marketplace-controls select {
+  min-width: 170px;
+}
+
+.listing-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.listing-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e5e2dc;
+}
+
+.listing-image {
+  height: 220px;
+  background-color: #eae7e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+}
+
+.listing-info {
+  padding: 22px;
+}
+
+.listing-info h3 {
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+.listing-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.listing-condition {
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.listing-description {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.listing-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listing-footer span {
+  color: #666;
+}
+
+.listing-footer button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 7px;
+  background-color: #222;
+  color: white;
+}
+
+.no-results {
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+}
