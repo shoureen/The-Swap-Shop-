@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function ListingCard({ listing }) {
   return (
     <div className="listing-card">
@@ -21,10 +22,15 @@ function ListingCard({ listing }) {
         </p>
 
         <div className="listing-footer">
-          <span>👁 {listing.views} views</span>
+  <span>👁 {listing.views} views</span>
 
-          <button>View Item</button>
-        </div>
+  <Link
+    to={`/listing/${listing.id}`}
+    className="view-item-button"
+  >
+    View Item
+  </Link>
+</div>
       </div>
     </div>
   );
