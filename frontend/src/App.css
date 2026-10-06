@@ -320,8 +320,8 @@
 
 .details-buttons .swap-button {
   background-color: white;
-  color: #222;
-  border: 1px solid #222;
+color: #222;
+border: 1px solid #222;
 }
 
 .view-item-button {
@@ -332,4 +332,90 @@
   color: white;
   text-decoration: none;
   font-size: 14px;
+}
+
+/* Create Listing Form */
+
+.form-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background-color: #f8f6f1;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 14px;
+  border: 1px solid #e5e2dc;
+}
+
+.form-container > a {
+  color: #222;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.form-container > a:hover {
+  text-decoration: underline;
+}
+
+.form-container h1 {
+  font-size: 40px;
+  margin: 25px 0 10px;
+}
+
+.form-container > p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container label {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.form-container textarea {
+  resize: vertical;
+}
+
+.form-container input:focus,
+.form-container textarea:focus,
+.form-container select:focus {
+  outline: 2px solid #222;
+}
+
+.form-container button {
+  margin-top: 20px;
+  padding: 14px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #444;
 }

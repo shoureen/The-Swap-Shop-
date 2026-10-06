@@ -1,3 +1,4 @@
+import CreateListing from "./pages/CreateListing";
 import ListingDetails from "./pages/ListingDetails";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -21,6 +22,11 @@ function App() {
   <Route
     path="/listing/:id"
     element={<ListingDetails />}
+  />
+
+  <Route
+    path="/create-listing"
+    element={<CreateListing />}
   />
 </Routes>
     </BrowserRouter>
