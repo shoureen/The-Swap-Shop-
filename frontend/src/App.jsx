@@ -1,3 +1,4 @@
+import Register from "./pages/Register";
 import CreateListing from "./pages/CreateListing";
 import ListingDetails from "./pages/ListingDetails";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -27,6 +28,10 @@ function App() {
   <Route
     path="/create-listing"
     element={<CreateListing />}
+  />
+  <Route
+    path="/register"
+    element={<Register />}
   />
 </Routes>
     </BrowserRouter>
