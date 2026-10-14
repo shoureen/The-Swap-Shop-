@@ -1,3 +1,4 @@
+import Login from "./pages/Login";
 import Register from "./pages/Register";
 import CreateListing from "./pages/CreateListing";
 import ListingDetails from "./pages/ListingDetails";
@@ -24,6 +25,7 @@ function App() {
     path="/listing/:id"
     element={<ListingDetails />}
   />
+  <Route path="/login" element={<Login />} />
 
   <Route
     path="/create-listing"
